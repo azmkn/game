@@ -1,0 +1,13 @@
+from random import randint
+n=int(input())
+def f():
+  while True:
+    p=randint(10**(n-1),10**n-1)
+    if p%5==0:
+      continue
+    print(p**3)
+    break
+  print("\n\n")
+  print(p)
+for i in range(int(input())):
+  f()
